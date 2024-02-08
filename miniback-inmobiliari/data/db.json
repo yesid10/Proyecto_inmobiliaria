@@ -1,0 +1,115 @@
+{
+    "inmuebles": [
+        {
+            "id": 1,
+            "direccion": "272 S Rexford Dr, Beverly Hills, CA 90212, USA",
+            "ciudad": "Beverly Hills, CA",
+            "idAgente": 1,
+            "fechaPublicacion": "2023-04-04",
+            "area": "2400 sq ft",
+            "banos": 2,
+            "garaje": 2,
+            "idtipoInmueble": 1,
+            "habitaciones": 3,
+            "tipoTransaccion": {
+                "venta": true,
+                "renta":false
+            },
+            "imagenes":[
+                {
+                    "id":1,
+                    "name": "vista frontal",
+                    "urlImage": "https://images.adsttc.com/media/images/5d34/e507/284d/d109/5600/0240/large_jpg/_FI.jpg?1563747560"
+                },
+                {
+                    "id":2,
+                    "name": "vista lateral",
+                    "urlImage": "https://arquitectopablorestrepo.com/wp-content/uploads/2018/03/Dise%C3%B1o-casa-campestre-las-margaritas-5-1-800x600.jpg"
+                 }
+            ],
+            "estado":{
+                "vendido": "pending",
+                "renta": "N.A"
+            }
+        },
+        {
+            "id": 2,
+            "direccion": "272 S Lusiana Dr, Malibu, CA 90212, USA",
+            "ciudad": "Beverly Hills, CA",
+            "idAgente": 4,
+            "fechaPublicacion": "2023-04-04",
+            "area": "2400 sq ft",
+            "banos": 2,
+            "garaje": 1,
+            "idtipoInmueble": 3,
+            "habitaciones": 2,
+            "tipoTransaccion": {
+                "venta": false,
+                "renta":true
+            },
+            "imagenes":[
+                "https://images.adsttc.com/media/images/5d34/e507/284d/d109/5600/0240/large_jpg/_FI.jpg?1563747560",
+                "https://arquitectopablorestrepo.com/wp-content/uploads/2018/03/Dise%C3%B1o-casa-campestre-las-margaritas-5-1-800x600.jpg"
+            ],
+            "estado":{
+                "vendido": "N.a",
+                "renta": "pending"
+            }
+
+        }
+    ],
+    "usuarios": [
+        {
+            "id":1,
+            "name": "Hellen Mattis",
+            "rol":"agente",
+            "username": "Hellen",
+            "password": "1234*"
+        },
+        {
+            "id":2,
+            "name": "Yesid Vanegas",
+            "rol":"Cliente",
+            "username": "Yesid",
+            "password": "1234*"
+        },
+        {
+            "id":3,
+            "name": "Alejandra Neisa",
+            "rol":"cliente",
+            "username": "Aleja",
+            "password": "1234*"
+        },
+        {
+            "id":4,
+            "name": "Emanuel Neisa",
+            "rol":"agente",
+            "username": "Emos",
+            "password": "1234*"
+        }
+    ],
+    "favoritos": [],
+    "transacciones": [],
+    "tipoInmueble": [
+        {
+            "id": 1,
+            "name": "casa"
+        },
+        {
+            "id": 2,
+            "name": "local comercial"
+        },
+        {
+            "id": 3,
+            "name": "apartamento"
+        },
+        {
+            "id": 4,
+            "name": "casa campestre"
+        },
+        {
+            "id": 5,
+            "name": "bodega"
+        }
+    ]
+}

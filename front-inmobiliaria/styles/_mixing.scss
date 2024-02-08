@@ -1,0 +1,14 @@
+
+@mixin buttons($sizePadding, $backgroundColor, $font-size, $color){
+    padding: $sizePadding;
+    background-color: $backgroundColor;
+    font-size: $font-size;
+    color: $color;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: $color;
+        color: $backgroundColor;
+        cursor: pointer;
+    }
+}

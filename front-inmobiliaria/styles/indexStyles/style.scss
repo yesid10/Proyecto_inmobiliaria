@@ -1,0 +1,143 @@
+@import "../universal";
+@import "../variables";
+@import "../mixing";
+
+body {
+    font-family: $font-primary;
+    font-size: $font-size;
+}
+
+.header {
+    &__loginBar {
+        background-color: $primary-color;
+        color: $font-secundary;
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 18px 18px 65px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__login {
+        a {
+            color: $font-secundary;
+            text-decoration: none;
+        }
+    }
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-font-primary ;
+            font-size: $font-size-links;
+            font-weight: 500;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+
+    }
+
+    &__logo {
+        width: 230px;
+        height: 82px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            padding-left: 36px;
+        }
+    }
+
+    &__button {
+        @include buttons(31px, $secundary-color, $font-size, $font-secundary)
+    }
+
+    &__banner {
+        background-image: url(../../assets/hero-bg-image.png);
+        height: 50vh;
+        background-size: cover;
+        padding: 157px 215px;
+    }
+
+    &__title {
+        font-size: 42px;
+        font-weight: 500;
+        color: $font-secundary;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: $font-secundary;
+    }
+
+    &__search {
+        background-color: $font-secundary;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        button{
+            @include buttons(20px, $primary-color,18px, $font-secundary);
+            border-radius: 4px;
+        }
+        
+
+    }
+
+    &__select {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            color: $color-label;
+            font-weight: 500;
+            font-size: $font-size-links;
+        }
+
+        select {
+            border: none;
+        }
+
+    }
+
+    input {
+        padding: 20px;
+        min-width: 300px;
+
+        &::placeholder {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+// .btn{
+//     &--orange{
+//         @include buttons(31px, $secundary-color)
+//     }
+
+// }
